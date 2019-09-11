@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div>
+    <form  method="POST" action ="{% url "post-mail" %}">
+    {% csrf_token %}
+        <h1>aradığınız özelliklere sahip telefonlar aşağıda listelenmektedir.</h1>
+        <p >İlginizi çeken ürünlerin yanındaki kutucuğu işaretleyin. Seçim işlemi bittikten sonra "mail olarak gönder" butonu ile oluşturduğunuz listeyi e-mail hesabınıza gönderin</p>
+       
+    {%for item in list%}
+    <div class="custom-control custom-checkbox div2" >
+                <p>{{ item }}</p>
+                <input  type="checkbox" class="custom-control-input" id="defaultInline{{ item }}" name="mail_list" value="{{ item }}" >
+                <label class="custom-control-label"  for="defaultInline{{ item }}">bu ürünü listeye ekle</label>
+    </div>
+    {% endfor %}
+
+    <section>
+        <p>Mail adresiniz: <input type="text" name="mailaddress"></p>   
+        <p> <button class='btn btn-outline-success my-2 my-sm-0' type="submit" role="button">mail olarak gönder!</button> </p>
+    </section>
+    </form>
+    </div>
+
+{%  endblock %}

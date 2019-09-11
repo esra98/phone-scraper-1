@@ -1,0 +1,417 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div>
+  <form  method="POST" action ="{% url "result-page" %}">
+  {% csrf_token %}
+        <h1>aradığınız özellikleri seçiniz</h1>
+        <p>İstediğiniz özellikleri seçtikten sonra en alttaki "ARA" tuşuna basınız.</p>
+        <section>
+                <h5>aradığınız markaları seçiniz</h5>
+
+                <!-- Default inline 2-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline2" name="brands" value="alcatel">
+                  <label class="custom-control-label" for="defaultInline2">alcatel</label>
+                </div>
+
+                <!-- Default inline 3-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline3" name="brands" value="Apple">
+                  <label class="custom-control-label" for="defaultInline3">Apple</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline4" name="brands" value="Asus">
+                  <label class="custom-control-label" for="defaultInline4">Asus</label>
+                </div>
+
+                <!-- Default inline 5-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline5" name="brands" value="BlackBerry">
+                  <label class="custom-control-label" for="defaultInline5">BlackBerry</label>
+                </div>
+
+                <!-- Default inline 6-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline6" name="brands" value="Honor">
+                  <label class="custom-control-label" for="defaultInline6">Honor</label>
+                </div>
+
+
+                <!-- Default inline 8-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline8" name="brands" value="HTC">
+                  <label class="custom-control-label" for="defaultInline8">HTC</label>
+                </div>
+
+                <!-- Default inline 9-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline9" name="brands" value="Huawei">
+                  <label class="custom-control-label" for="defaultInline9">Huawei</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline10" name="brands" value="Lenovo">
+                  <label class="custom-control-label" for="defaultInline10">Lenovo</label>
+                </div>
+
+                <!-- Default inline 11-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline11" name="brands" value="LG">
+                  <label class="custom-control-label" for="defaultInline11">LG</label>
+                </div>
+
+                <!-- Default inline 12-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline12" name="brands" value="Nokia">
+                  <label class="custom-control-label" for="defaultInline12">Nokia</label>
+                </div>
+
+                 <!-- Default inline 13-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline13" name="brands" value="OnePlus">
+                  <label class="custom-control-label" for="defaultInline13">OnePlus</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline14" name="brands" value="Oppo">
+                  <label class="custom-control-label" for="defaultInline14">Oppo</label>
+                </div>
+
+
+                <!-- Default inline 15-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline15" name="brands" value="Samsung">
+                  <label class="custom-control-label" for="defaultInline15">Samsung</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline16" name="brands" value="Sony">
+                  <label class="custom-control-label" for="defaultInline16">Sony</label>
+                </div>
+
+                <!-- Default inline 17-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline17" name="brands" value="Xiomi">
+                  <label class="custom-control-label" for="defaultInline17">Xiomi</label>
+                </div>
+        </section>
+        <section>
+                <h5>dahili hafıza büyüklüğü seçiniz.</h5>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline1m" name="memory" value="64MB">
+                  <label class="custom-control-label" for="defaultInline1m">64MB</label>
+                </div>
+
+                <!-- Default inline 2-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline2m" name="memory" value="128MB">
+                  <label class="custom-control-label" for="defaultInline2m">128MB</label>
+                </div>
+
+                <!-- Default inline 3-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline3m" name="memory" value="256MB">
+                  <label class="custom-control-label" for="defaultInline3m">256MB</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline4m" name="memory" value="512MB">
+                  <label class="custom-control-label" for="defaultInline4m">512MB</label>
+                </div>
+
+                <!-- Default inline 5-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline5m" name="memory" value="1GB">
+                  <label class="custom-control-label" for="defaultInline5m">1GB</label>
+                </div>
+
+                <!-- Default inline 6-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline6m" name="memory" value="2GB">
+                  <label class="custom-control-label" for="defaultInline6m">2GB</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline7m" name="memory" value="4GB">
+                  <label class="custom-control-label" for="defaultInline7m">4GB</label>
+                </div>
+
+                <!-- Default inline 8-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline8m" name="memory" value="8GB">
+                  <label class="custom-control-label" for="defaultInline8m">8GB</label>
+                </div>
+
+                 <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline9m" name="memory" value="16GB">
+                  <label class="custom-control-label" for="defaultInline9m">16GB</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline10m" name="memory" value="32GB">
+                  <label class="custom-control-label" for="defaultInline10m">32GB</label>
+                </div>
+
+                <!-- Default inline 11-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline11m" name="memory" value="64GB">
+                  <label class="custom-control-label" for="defaultInline11m">64GB</label>
+                </div>
+
+                <!-- Default inline 12-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline12m" name="memory" value="128GB">
+                  <label class="custom-control-label" for="defaultInline12m">128GB</label>
+                </div>
+
+                 <!-- Default inline 13-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline13m" name="memory" value="256GB">
+                  <label class="custom-control-label" for="defaultInline13m">256GB</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline14m" name="memory" value="512GB">
+                  <label class="custom-control-label" for="defaultInline14m">512GB</label>
+                </div>
+
+
+        </section>
+        <section>
+                <h5>ram büyüklüğü seçiniz.</h5>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline1r" name="ram" value="16MB">
+                  <label class="custom-control-label" for="defaultInline1r">16MB</label>
+                </div>
+
+                <!-- Default inline 2-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline2r" name="ram" value="32MB">
+                  <label class="custom-control-label" for="defaultInline2r">32MB</label>
+                </div>
+
+                <!-- Default inline 3-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline3r" name="ram" value="64MB">
+                  <label class="custom-control-label" for="defaultInline3r">64MB</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline4r" name="ram" value="128MB">
+                  <label class="custom-control-label" for="defaultInline4r">128MB</label>
+                </div>
+
+                <!-- Default inline 5-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline5r" name="ram" value="256MB">
+                  <label class="custom-control-label" for="defaultInline5r">256MB</label>
+                </div>
+
+                <!-- Default inline 6-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline6r" name="ram" value="512MB">
+                  <label class="custom-control-label" for="defaultInline6r">512MB</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline7r" name="ram" value="768MB">
+                  <label class="custom-control-label" for="defaultInline7r">768MB</label>
+                </div>
+
+                <!-- Default inline 8-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline8r" name="ram" value="1GB">
+                  <label class="custom-control-label" for="defaultInline8r">1GB</label>
+                </div>
+
+                 <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline9r" name="ram" value="1.5GB">
+                  <label class="custom-control-label" for="defaultInline9r">1.5GB</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline10r" name="ram" value="2GB">
+                  <label class="custom-control-label" for="defaultInline10r">2GB</label>
+                </div>
+
+                <!-- Default inline 11-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline11r" name="ram" value="3GB">
+                  <label class="custom-control-label" for="defaultInline11r">3GB</label>
+                </div>
+
+                <!-- Default inline 12-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline12r" name="ram" value="4GB">
+                  <label class="custom-control-label" for="defaultInline12r">4GB</label>
+                </div>
+
+                 <!-- Default inline 13-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline13r" name="ram" value="6GB">
+                  <label class="custom-control-label" for="defaultInline13r">6GB</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline14r" name="ram" value="8GB">
+                  <label class="custom-control-label" for="defaultInline14r">8GB</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline15r" name="ram" value="10GB">
+                  <label class="custom-control-label" for="defaultInline15r">10GB</label>
+                </div>
+        </section>
+
+        <section>
+                <h5>arka kamera çözünürlüğü.</h5>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline1c" name="camera" value="1MP">
+                  <label class="custom-control-label" for="defaultInline1c">1MP</label>
+                </div>
+
+                <!-- Default inline 2-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline2c" name="camera" value="2MP">
+                  <label class="custom-control-label" for="defaultInline2c">2MP</label>
+                </div>
+
+                <!-- Default inline 3-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline3c" name="camera" value="3MP">
+                  <label class="custom-control-label" for="defaultInline3c">3MP</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline4c" name="camera" value="4MP">
+                  <label class="custom-control-label" for="defaultInline4c">4MP</label>
+                </div>
+
+                <!-- Default inline 5-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline5c" name="camera" value="5MP">
+                  <label class="custom-control-label" for="defaultInline5c">5MP</label>
+                </div>
+
+                <!-- Default inline 6-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline6c" name="camera" value="8MP">
+                  <label class="custom-control-label" for="defaultInline6c">8MP</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="defaultInline7c" name="camera" value="10MP">
+                  <label class="custom-control-label" for="defaultInline7c">10MP</label>
+                </div>
+
+                <!-- Default inline 8-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline8c" name="camera" value="12MP">
+                  <label class="custom-control-label" for="defaultInline8c">12MP</label>
+                </div>
+
+                 <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline9c" name="camera" value="13MP">
+                  <label class="custom-control-label" for="defaultInline9c">13MP</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline10c" name="camera" value="16MP">
+                  <label class="custom-control-label" for="defaultInline10c">16MP ve fazlası</label>
+                </div>
+
+        </section>
+       
+        <section>
+                <h5>SIM kart sayısı.</h5>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline1SIM2" name="sim" value="double">
+                  <label class="custom-control-label" for="defaultInline1SIM2">çift SIM kart yuvalı</label>
+                </div>
+
+        </section>
+      <br></br>
+        <section>
+                <h5>ekran boyutu seçiniz.</h5>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline1s" name="screen_size" value="5.5">
+                  <label class="custom-control-label" for="defaultInline1s">5.5 inch</label>
+                </div>
+
+                <!-- Default inline 2-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline2s" name="screen_size" value="5.6">
+                  <label class="custom-control-label" for="defaultInline2s">5.6 inch</label>
+                </div>
+
+                <!-- Default inline 3-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline3s" name="screen_size" value="5.7">
+                  <label class="custom-control-label" for="defaultInline3s">5.7 inch</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline4s" name="screen_size" value="5.8">
+                  <label class="custom-control-label" for="defaultInline4s">5.8 inch</label>
+                </div>
+
+                <!-- Default inline 5-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline5s" name="screen_size" value="5.9">
+                  <label class="custom-control-label" for="defaultInline5s">5.9 inch</label>
+                </div>
+
+                <!-- Default inline 6-->
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline6s" name="screen_size" value="6">
+                  <label class="custom-control-label" for="defaultInline6s">6 inch</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline7s" name="screen_size" value="6.1">
+                  <label class="custom-control-label" for="defaultInline7s">6.1 inch</label>
+                </div>
+
+                <!-- Default inline 8-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline8s" name="screen_size" value="6.2">
+                  <label class="custom-control-label" for="defaultInline8s">6.2 inch</label>
+                </div>
+
+                 <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline9s" name="screen_size" value="6.3">
+                  <label class="custom-control-label" for="defaultInline9s">6.3 inch</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline10s" name="screen_size" value="6.4">
+                  <label class="custom-control-label" for="defaultInline10s">6.4 inch</label>
+                </div>
+
+                <!-- Default inline 11-->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline11s" name="screen_size" value="6.5">
+                  <label class="custom-control-label" for="defaultInline11s">6.5 inch</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultInline12s" name="screen_size" value="max">
+                  <label class="custom-control-label" for="defaultInline12s">6.5 inchten büyük</label>
+                </div>
+
+        </section>
+
+        <section>
+            <p> <button class='btn btn-outline-success my-2 my-sm-0' type="submit" role="button">ARA!</button> </p>
+        </section>
+    </form>
+      </div>
+  {% endblock %}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
